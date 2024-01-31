@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "jrnl-search"
+version = "0.1.0"
+description = ""
+authors = ["Carl Kolon <carl@kolon.org>"]
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: News/Diary",
+    "Environment :: Console",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.13"
+numpy = "^1.21.2"
+jrnl = "^4.0"
+sentence-transformers = "^2.1.0"
+rich = "^13.7.0"
+
+[tool.poetry.scripts]
+jrnl-search = "jrnl_search:main.run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

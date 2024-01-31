@@ -6,5 +6,5 @@ def run():
     args = parse_args()
     query = args.query
     if not query:
-        query = input('Please enter a query')
+        query = input('Please enter a query: ')
     search(query)

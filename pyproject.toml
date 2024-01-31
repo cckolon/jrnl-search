@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jrnl-search"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Carl Kolon <carl@kolon.org>"]
 readme = "README.md"
@@ -21,7 +21,7 @@ sentence-transformers = "^2.1.0"
 rich = "^13.7.0"
 
 [tool.poetry.scripts]
-jrnl-search = "jrnl_search:main.run"
+jrnl-search = "jrnl_search.main:run"
 
 [build-system]
 requires = ["poetry-core"]
